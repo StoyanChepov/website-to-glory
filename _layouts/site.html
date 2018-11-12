@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{{site.title}}</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+
+<body>
+    <div class="site">
+        <header class="site-header">
+            <div class="site-branding">
+                <p class="site-title">
+                    <a href="{{ site.baseurl }}/">{{ site.title }}</a>
+                </p>
+                <p class="site-description">
+                    {{site.description}}
+                </p>
+            </div>
+            <nav class="navigation main">
+                <ul>
+                    <li><a class="fas fa-newspaper" href="{{ site.baseurl }}/">Blog</a></li>
+                    <li><a class="fas fa-user-secret" href="{{ site.baseurl }}/about/">About</a></li>
+                    <li><a class="fas fa-envelope" href="{{ site.baseurl }}/contacts/">Contacts</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main class="site-content">
+            {{content}}
+        </main>
+        <footer class="site-footer">
+
+        </footer>
+    </div>
+</body>
+
+</html>
