@@ -1,7 +1,16 @@
 /*typography*/
 html{
      background-color: brown;
-    font: 14px/1.5 "Verdana", sans-serif;
+    font:var( --font-size-initial, 14px) /1.5 "Verdana", sans-serif;
+}
+@media screen and (min-width:500px){
+    html{font-size:var( --font-size-lv2, 16px);}
+}
+@media screen and (min-width:700px){
+    html{font-size:var( --font-size-lv3, 18px);}
+}
+@media screen and (min-width:1600px){
+    html{font-size:var( --font-size-lv4, 21px);}
 }
 body, table,td,th, textarea,option,select,form,input{
     font: inherit;
