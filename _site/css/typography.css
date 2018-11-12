@@ -1,0 +1,26 @@
+/*typography*/
+html{
+     background-color: brown;
+    font: 14px/1.5 "Verdana", sans-serif;
+}
+body, table,td,th, textarea,option,select,form,input{
+    font: inherit;
+}
+h1,h2,h3,h4,h5,h6{
+    line-height: 1.2;
+}
+h1 {
+  font-size: 3.998em;
+}
+h2 {font-size: 2.827em;}
+h3 {font-size: 1.999em;}
+h4 {font-size: 1.414em;}
+p, ul, ol{
+    padding-bottom: 1.5em;
+}
+ul,ol{
+    padding-left: 1.5rem;
+}
+li{
+    list-style-position: inside;
+}
