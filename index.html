@@ -1,13 +1,16 @@
 ---
 layout: site
 ---
-<p><a href="/csstest/">Go to CSS Test if works</a></p>
+<p><a href="{{ site.baseurl }}/csstest/">Go to CSS Test if works</a></p>
+
 
 <ul>
     {% for post in site.posts %}
     <li>
-        <a href="{{ post.url }}">{{ post.title }}</a>
-        {{ post.excerpt }}
+        <a href="{{ site.baseurl }}{{ post.url }}">
+            <span class="title">{{ post.title }}</span>
+            <span class="date">{{ post.date | date_to_string }}</span>
+        </a>
     </li>
     {% endfor %}
 </ul>
