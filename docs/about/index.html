@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>The accounting website!</title>
-    <link rel="stylesheet" href="/css/styles.css" type="text/css" />
+    <link rel="stylesheet" href="{{ site.baseurl }}/css/styles.css" type="text/css" />
 </head>
 
 <body>
@@ -14,7 +14,7 @@
         <header class="site-header">
             <div class="site-branding">
                 <p class="site-title">
-                    <a href="/">The accounting website!</a>
+                    <a href="{{ site.baseurl }}/">The accounting website!</a>
                 </p>
                 <p class="site-description">
                     It works fine!
@@ -22,8 +22,8 @@
             </div>
             <nav class="navigation main">
                 <ul>
-                    <li><a href="/">Blog</a></li>
-                    <li><a href="/about">About</a></li>
+                    <li><a href="{{ site.baseurl }}/">Blog</a></li>
+                    <li><a href="{{ site.baseurl }}/about">About</a></li>
                 </ul>
             </nav>
         </header>
