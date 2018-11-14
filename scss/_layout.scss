@@ -1,0 +1,26 @@
+.site {
+	padding: var(--spacing-site, 2em);
+}
+
+.site-content {
+	max-width: 60rem;
+	margin: 0 auto;
+}
+.site-footer{
+    background-color: black;
+    color: white;
+    margin-top: 2rem;;
+}
+body > div > header > nav > ul{
+    list-style-type: none;
+}
+body > div > header > nav > ul>li>a{
+text-decoration: none;
+}
+.site-footer ul{
+     list-style-type: none;
+}
+.site-footer ul>li>a{
+    text-decoration: none;
+    color: white;
+}

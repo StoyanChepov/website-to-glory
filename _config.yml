@@ -1,7 +1,7 @@
 # Welcome to Jekyll Settings!
-title: The accounting website!
+title: Сайтът за счетоводство!
 email: s.chepov@abv.bg
-description: It works fine!
+description: В Бургас сме!
 baseurl: "/website-to-glory" # the subpath of your site, e.g. /blog
 url: "https://stoyanchepov.github.io/website-to-glory" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: schepov
