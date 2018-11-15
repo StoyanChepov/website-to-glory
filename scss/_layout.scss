@@ -11,11 +11,11 @@
     color: white;
     margin-top: 2rem;;
 }
-body > div > header > nav > ul{
+.navigation ul{
     list-style-type: none;
 }
-body > div > header > nav > ul>li>a{
-text-decoration: none;
+.navigation ul>li>a{
+    text-decoration: none;
 }
 .site-footer ul{
      list-style-type: none;
@@ -23,4 +23,10 @@ text-decoration: none;
 .site-footer ul>li>a{
     text-decoration: none;
     color: white;
+}
+.site-content > ul{
+     list-style-type: none;
+}
+.site-content > ul>li>a{
+    text-decoration: none;
 }
