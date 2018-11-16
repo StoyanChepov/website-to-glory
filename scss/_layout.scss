@@ -1,4 +1,16 @@
-.site {
+html{
+     background-color: lightsalmon;
+}
+html,body{
+    height: 100%;
+}
+ul{
+  list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+.site-content {
 	padding: var(--spacing-site, 2em);
 }
 
@@ -6,27 +18,34 @@
 	max-width: 60rem;
 	margin: 0 auto;
 }
+.site-header{
+    background-color: orangered;
+    color: white;
+}
 .site-footer{
+  
+  bottom: 0;
     background-color: black;
     color: white;
     margin-top: 2rem;;
 }
+
 .navigation ul{
-    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
 }
 .navigation ul>li>a{
-    text-decoration: none;
-}
-.site-footer ul{
-     list-style-type: none;
-}
+    color: white;
+} 
 .site-footer ul>li>a{
-    text-decoration: none;
     color: white;
 }
-.site-content ul{
-     list-style-type: none;
+.site-content{
+
 }
 .site-content ul li a{
-    text-decoration: none;
+    color: black;
+}
+.site-content a{
+    color: black;
 }
