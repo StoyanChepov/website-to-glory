@@ -22,6 +22,17 @@ a{
     background-color: orangered;
     color: white;
 }
+body,
+.site{
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+
+}
+.site-content{
+    flex: 1 0 auto;
+    
+}
 .site-footer{
   
   bottom: 0;
