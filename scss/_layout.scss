@@ -21,6 +21,13 @@ a{
     background-color: orangered;
     color: white;
 }
+.site-branding{
+    float: left;
+    width: 20%;
+}
+.site-branding p{
+    padding-bottom: 0.5rem;
+}
 .navigation ul{
     display: flex;
     justify-content: space-around;
@@ -36,7 +43,6 @@ a{
     flex: 1 0 auto;
 }
 .site-content {
-	max-width: 60rem;
 	margin: 0 auto;
 }
 
@@ -49,8 +55,6 @@ a{
 }
 */
 .site-footer{
-  
-  bottom: 0;
     background-color: black;
     color: white;
     margin-top: 2rem;;
@@ -62,6 +66,7 @@ a{
 
 ul.posts {
   list-style-type: none;
+  padding-left: 0;
 }
 ul.posts li{
   display: block;
@@ -110,5 +115,50 @@ ul.posts li:nth-child(6) {
     padding-bottom: 1rem;
 }
 .why-choose-us p{
+    font-size: 0.8rem;
+}
+.left_menu_cont {
+    float: left;
+    border-radius:2rem;
+    width: 25%;
+    background: wheat;
+     padding: 1rem;
+}
+.left_menu_title{
+background: orangered;
+border-radius:5rem;
+padding: 0.5rem;
+padding-top: 0.2rem;
+}
+.left_menu_title a{
+    font-size: 1.5rem;  
+}
+.right_menu_cont {
+    float: right;
+    width: 65%;
+}
+.right_menu_cont h4{
+text-align: left;
+margin-bottom: 2rem;  
+}
+p.site-description{
 font-size: 0.8rem;
+}
+p.site-title{
+font-size: 1.2rem;
+font-weight: bold;
+}
+p.site-title a{
+color: black;
+}
+.newscats{
+    display: none;
+}
+.footer-links{
+    float: right;
+    margin-right: 2rem;
+}
+.site-title img{
+height: 2rem;
+width: 2rem;
 }
