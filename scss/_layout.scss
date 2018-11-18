@@ -18,8 +18,8 @@ a{
 }
 
 .site-header{
-    background-color: orangered;
-    color: white;
+    background-color: white;
+    color: black;
 }
 .site-branding{
     float: left;
@@ -33,7 +33,7 @@ a{
     justify-content: space-around;
 }
 .navigation ul>li>a{
-    color: white;
+    color: black;
 } 
 //sass is comming
 .site-content {
@@ -125,7 +125,7 @@ ul.posts li:nth-child(6) {
      padding: 1rem;
 }
 .left_menu_title{
-background: orangered;
+background: #FF0000;
 border-radius:5rem;
 padding: 0.5rem;
 padding-top: 0.2rem;
@@ -158,7 +158,12 @@ color: black;
     float: right;
     margin-right: 2rem;
 }
+.site-description{
+    margin-left: 0.5rem;
+}
 .site-title img{
-height: 2rem;
-width: 2rem;
+height: 2.5rem;
+width: 2.5rem;
+margin: 0.5rem;
+margin-bottom: 0;
 }
