@@ -41,12 +41,12 @@ p.site-description{
 }
 //sass is comming
 .site-content {
+    display: flex;
+    flex-wrap:wrap;
     padding: var(--spacing-site, 2em);
     flex: 1 0 auto;
-    margin: 0 auto;
-    a{
-        color: black;
-    }
+    margin: 0 auto;    
+    a{color: black;}
 }
 
 .site-footer{
@@ -119,24 +119,26 @@ ul.posts li:nth-child(6) {
 }
 
 .left_menu_cont {
-    float: left;
+    flex: 1 1 15rem;
     border-radius:2rem;
-    width: 25%;
+    text-align: center;
     background: wheat;
-     padding: 1rem;
+    padding: 1rem;
+    margin: 2rem;
 }
 .left_menu_title{
 background: #FF0000;
 border-radius:5rem;
 padding: 0.5rem;
 padding-top: 0.2rem;
+margin-bottom: 1.5rem;
 }
 .left_menu_title a{
     font-size: 1.5rem;  
 }
 .right_menu_cont {
-    float: right;
-    width: 65%;
+    flex: 1 1 20rem;
+    margin: 2rem;
 }
 .right_menu_cont h4{
 text-align: left;
