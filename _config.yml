@@ -5,7 +5,7 @@ description: Вашият сайт за счетоводство
 baseurl: "/website-to-glory" # the subpath of your site, e.g. /blog
 url: "https://stoyanchepov.github.io/website-to-glory" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: schepov
-github_username:  StoyanChepov
+github_username:  StoyanChepovy
 destination: docs
 # Build settings
 markdown: kramdown
