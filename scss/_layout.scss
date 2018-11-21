@@ -1,43 +1,93 @@
 html{
-     background-color: lightsalmon;
+     background-color: rgb(243, 200, 183);
 }
 html,body{
     height: 100%;
 }
-body,.site{
+body,
+.site{
     display: flex;
     min-height: 100vh;
     flex-direction: column;
 }
+
 ul{
   list-style-type: none;
 }
 a{
     text-decoration: none;
 }
+ /*.work{
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    vertical-align: middle;
+ }
+ */
 .site-header{
+    display: inline-block;
     background-color: white;
     color: black;
-}
-p.site-title{
-font-size: 1.2rem;
-font-weight: bold;
-    a{color: black;}
-    img{
-    height: 2.5rem;
-    width: 2.5rem;
-    margin: 0.5rem;
-    margin-bottom: 0;
+    align-items: center;
+    div.identity{
+        color: gray;
+        display:flex;
+        div.site-logo{
+            img{
+            height: 2.5rem;
+            width: 2.5rem;
+            margin: 0.5rem;
+            margin-bottom: 0;
+            }
+        }
+        .site-branding{
+            text-align: center;
+            display: inline-block;
+            justify-content: start;
+    
+        p.site-description{
+            font-size: 0.8rem;
+            padding: 0;
+        }
+        p.site-title{
+            
+            padding: 0;
+            font-size: 1.2rem;
+            text-transform: uppercase;
+            font-weight: bold;
+        a{color: black;}
+        }
     }
-}
-p.site-description{
-    font-size: 0.8rem;
-    margin-left: 0.5rem;
-}
-.site-branding{
-    float: left;
-    width: 20%;
-    p{padding-bottom: 0.5rem;}
+    
+    }
+
+    .navigation{
+       
+        ul{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around; 
+            padding: 0;       
+            align-content: center;
+        }
+        li{
+             text-align: center;
+            flex: 1 0 auto;
+            list-style: none outside;
+            margin-bottom: 1.5rem;
+        }
+        li a{
+            padding: 0.5rem 1rem;
+            color: black;
+        } 
+        li a:focus,
+        li a:hover{
+            color: white;
+            background: orangered;
+            border-radius: 4rem; 
+        }
+    }
 }
 //sass is comming
 .site-content {
@@ -48,22 +98,18 @@ p.site-description{
     margin: 0 auto;    
     a{color: black;}
 }
-
-.site-footer{
-    background-color: black;
-    color: white;
-}
-
-.site-footer ul>li>a{
-    color: white;
-}
-.navigation ul{
+.end{
     display: flex;
     justify-content: space-around;
 }
-.navigation ul>li>a{
-    color: black;
-} 
+.site-footer{
+    padding-top: 1rem;
+    background-color: black;
+    color: white;
+    ul>li>a{
+    color: white;
+    }
+}
 ul.posts {
   list-style-type: none;
   padding-left: 0;
@@ -125,6 +171,13 @@ ul.posts li:nth-child(6) {
     background: white;
     padding: 1rem;
     margin: 2rem;
+    a:hover,
+    a:focus{
+        background: black;
+        color: azure;
+        padding: 1rem;
+        border-radius:4rem; 
+    }
 }
 .left_menu_title{
 background: #FF0000;
@@ -140,6 +193,7 @@ margin-bottom: 1.5rem;
     flex: 1 1 20rem;
     margin: 2rem;
 }
+
 .right_menu_cont h4{
 text-align: left;
 margin-bottom: 2rem;  
@@ -152,37 +206,5 @@ margin-bottom: 2rem;
     float: right;
     margin-right: 2rem;
 }
-
-
-/*Just trying out
-.site{
-  flex: 1 1 auto;
-  height: 100%;
-  width: 0 auto;
-  margin: 0 auto;
-  position:relative;
-}
-.site:before,
-.site:after{
-  content: "";
-  display:block;
-  position: absolute;
-  top:0;
-  left:0;
-  right:0;
-  bottom:0;
-  transition: opacity 4s ease;
-  opacity: 1;
-z-index: -11111;
-}
-.site:after{
-   background: linear-gradient(to right, #ef3b36, #ffffff);
-}
-.site:before{
-    background: linear-gradient(to right, #dce35b, #45b649);
-}
-.site:hover:after{
- opacity: 0; 
-}*/
 
 
