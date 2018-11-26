@@ -1,15 +1,15 @@
 /*typography*/
 html{
-    font:var( --font-size-initial, 14px) /1.5 "Verdana", sans-serif;
+    font:var( --font-size-initial, 16px) /1.5 "Verdana", sans-serif;
 }
 @media screen and (min-width:500px){
-    html{font-size:var( --font-size-lv2, 16px);}
+    html{font-size:var( --font-size-lv2, 18px);}
 }
 @media screen and (min-width:700px){
-    html{font-size:var( --font-size-lv3, 18px);}
+    html{font-size:var( --font-size-lv3, 21px);}
 }
-@media screen and (min-width:1600px){
-    html{font-size:var( --font-size-lv4, 21px);}
+@media screen and (min-width:1024px){
+    html{font-size:var( --font-size-lv4, 24px);}
 }
 body, table,td,th, textarea,option,select,form,input{
     font: inherit;
