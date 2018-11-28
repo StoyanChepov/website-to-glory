@@ -10,12 +10,8 @@ body,
     min-height: 100vh;
     flex-direction: column;
 }
-ul{
-  list-style-type: none;
-}
-a{
-    text-decoration: none;
-}
+ul{list-style-type: none;}
+a{text-decoration: none;}
 .site-header{
     display: inline-block;
     background-color: white;
@@ -244,13 +240,53 @@ ul.posts li:nth-child(6) {
     float: right;
     margin-right: 2rem;
 }
+    .container{
+        display: grid;
+        padding: 0;
+        margin: 0;
+        grid-gap: 1.5rem;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto auto auto;
+        grid-auto-flow: dense;
+       
+        .content_element{
+            grid-column-start: 1;
+            grid-column-end: 2;
+            grid-row-start: 2;
+            text-align: center;
+    }
+        .message_box{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        } 
+        .location{
+            position: relative;
+            overflow: hidden;
+            iframe{
+            display: block;
+            width: 100%;
+            height: 60vh;        
+            }
+        }
+    }
+    @media screen and(max-width: 600px){
+    .site-content{
+        padding: 0;
+    }
+    .container{
+    grid-template-columns: 1fr;
+    text-align: center;
+      .content_element{
+            grid-column-end: 2;
+        }
+        .message_box{
+        grid-column-end: 2;
+        } 
+    } 
+}
 .devn-form{
     display: flex;
-    justify-content: space-around;
-}
-.devn-form fieldset{
-      width: 50%;
-      border: none;
 }
 .row .label{
     display: block;
