@@ -1,5 +1,6 @@
 html{
      background-color: white;
+     color: #031248
 }
 html,body{
     height: 100%;
@@ -16,7 +17,6 @@ a{text-decoration: none;}
     padding-top: 0.5rem;
     display: inline-block;
     background-color: #B1E6F4 ;
-    color: #031248;
     align-items: center;
     div.identity{
         border-bottom: 0.5rem solid white;
@@ -233,12 +233,30 @@ ul.posts li:nth-child(6) {
     padding: 1rem;
     border-radius:4rem;
     }
-    .menu_servis a:hover,
-    .menu_servis a:focus .menu_servis p{
-        background: #031248;
-        color: azure; 
+    .menu_servis a{
+     position: relative;
+    }
+    .menu_servis a:before {
+    content: "";
+    position: absolute;
+    width: 88%;
+    height: 0.16rem;
+    bottom: 0;
+    left: 6%;
+    background-color: red;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 1s ease-in-out 0s;
+    transition: all 1s ease-in-out 0s;
+    }
+    .menu_servis p> a:hover:before {
+        visibility: visible;
+        -webkit-transform: scaleX(1);
+        transform: scaleX(1);
     }
 }
+
 .left_menu_title{
     background: white;
     border-radius:2rem;
