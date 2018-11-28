@@ -1,5 +1,5 @@
 html{
-     background-color: rgb(243, 200, 183);
+     background-color: white;
 }
 html,body{
     height: 100%;
@@ -13,16 +13,21 @@ body,
 ul{list-style-type: none;}
 a{text-decoration: none;}
 .site-header{
+    padding-top: 0.5rem;
     display: inline-block;
-    background-color: white;
-    color: black;
+    background-color: #B1E6F4 ;
+    color: #031248;
     align-items: center;
     div.identity{
+        border-bottom: 0.5rem solid white;
         color: gray;
         display:flex;
-        justify-content: space-around;
+        justify-content: space-between;
     .brand{
         display: flex;
+        background-color: white;
+        padding: 0 0.5rem;
+        border-top-right-radius: 1rem;
     }
         div.col-md-6{
             a{
@@ -51,13 +56,20 @@ a{text-decoration: none;}
             font-size: 1.2rem;
             text-transform: uppercase;
             font-weight: bold;
-        a{color: black;}
+        a{color: #031248;}
         }
     }
-    .col-md-6{
-        font-size: 0.8rem;
+    .col-md-6{ 
+        display: inline-block;
+        vertical-align: baseline;
+        i{
+            color: #031248;
+        }
         a{
-        padding: 0.3rem 0.5rem;
+        display: inline-block;
+         padding-right:1rem;
+          padding-left:1rem;
+         font-size: 0.8rem;
         }
     }
 }
@@ -72,14 +84,15 @@ a{text-decoration: none;}
         z-index: 1;
         a {
         float: none;
-        color: black;
+        color: #031248;
         padding: 0.5rem 1rem ;
         text-decoration: none;
         display: block;
         text-align: left;
         }
         a:hover {
-            background-color: red;
+            background-color: #031248;
+            color: white;
         }
     }
 .dropdown:hover .dropdown-content {
@@ -96,16 +109,18 @@ a{text-decoration: none;}
             text-align: center;
             flex: 1 0 auto;
             list-style: none outside;
-            margin-bottom: 1.5rem;
+            margin-bottom: 0.7rem;
+            margin-top: 0.7rem;
             
         }
         li a{
             padding: 0.5rem 1rem;
             border-radius:4rem; 
-            color: black;
+            color: #031248;
         }
          li a:hover{
-            background: #FF0000;
+            background: white;
+            color: red;
         }
         
     }
@@ -118,7 +133,7 @@ a{text-decoration: none;}
     padding-top: 1rem;
     flex: 1 0 auto;
     margin: 0 auto;    
-    a{color: black;}
+    a{color: #031248}
 }
 .end{
     display: flex;
@@ -209,7 +224,7 @@ ul.posts li:nth-child(6) {
     flex: 1 1 12rem;
     border-radius:2rem;
     text-align: center;
-    background: white;
+    background: #B1E6F4;
     height: fit-content;
     padding: 1rem;
     margin: 1rem;
@@ -220,13 +235,14 @@ ul.posts li:nth-child(6) {
     }
     .menu_servis a:hover,
     .menu_servis a:focus .menu_servis p{
-        background: black;
+        background: #031248;
         color: azure; 
     }
 }
 .left_menu_title{
-    background: #FF0000;
-    border-radius:5rem;
+    background: white;
+    border-radius:2rem;
+    border: 0.1rem solid red;
     padding: 0.5rem;
     padding-top: 0.2rem;
     margin-bottom: 1.5rem;
@@ -282,7 +298,8 @@ ul.posts li:nth-child(6) {
     }
     @media screen and(max-width: 600px){
     .site-content{
-        padding: 0;
+        padding-left:0;
+        padding-right:0; 
     }
     .container{
     grid-template-columns: 1fr;
