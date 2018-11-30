@@ -314,7 +314,15 @@ ul.posts li:nth-child(6) {
             }
         }
     }
+ @media screen and(max-width: 350px){
+    .site-header div.identity .col-md-6{
+    display: none;
+     }
+ }
     @media screen and(max-width: 600px){
+    li#services a{
+        pointer-events: none;
+    }
     .site-content{
         padding-left:0;
         padding-right:0; 
