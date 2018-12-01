@@ -203,9 +203,9 @@ ul.posts li:nth-child(5) {
 ul.posts li:nth-child(6) {
   animation-delay: 1.5s;
 }
-.why-choose-us{
+ .why-choose-us{
  display: grid;
-  grid-template-columns: 25% auto 25%;
+  grid-template-columns: auto auto auto;
   grid-template-rows: auto auto auto auto ;
   grid-gap: 0.5rem;
    h4{
@@ -267,7 +267,7 @@ ul.posts li:nth-child(6) {
         transform: scaleX(1);
     }
 }
-div#silva
+div.silva
 {
     background: white;
     border-radius:2rem;
@@ -295,27 +295,31 @@ div#silva
     float: right;
     margin-right: 2rem;
 }
-    .container{
+.container{
         display: grid;
+        align-items: center;
         padding: 0;
         margin: 0;
         grid-gap: 1.5rem;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 3fr 5fr 1fr;
         grid-template-rows: auto auto auto auto;
         grid-auto-flow: dense;
        
         .content_element{
-            grid-column-start: 1;
-            grid-column-end: 2;
-            grid-row-start: 2;
+            grid-column-start: 2;
+            grid-column-end: 4;
+            grid-row-start: 1;
             text-align: center;
     }
         .message_box{
-        grid-column-start: 1;
-        grid-column-end: 2;
-        grid-row-start: 1;
+        grid-column-start: 2;
+        grid-column-end: 4;
+        grid-row-start: 2;
         } 
         .location{
+        grid-column-start: 3;
+        grid-column-end: 5;
+        grid-row-start: 3;
             position: relative;
             overflow: hidden;
             iframe{
@@ -324,15 +328,18 @@ div#silva
             height: 60vh;        
             }
         }
+        .wrapper{
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 3;
+        } 
+         .form{
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 4;
+        } 
     }
- @media screen and(max-width: 350px){
-    .site-header div.identity .col-md-6{
-    display: none;
-     }
-     .site-header div.identity .site-branding p.site-description {
-         display: none;
-     }
- }
+ 
     @media screen and(max-width: 600px){
  .dropdown:hover .dropdown-content {
     display: none !important;
@@ -342,19 +349,89 @@ div#silva
         padding-right:0; 
     }
     .container{
-    grid-template-columns: 1fr;
-    text-align: center;
-      .content_element{
-            grid-column-end: 2;
+        
+        grid-gap: 1rem;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto auto auto auto;
+       
+        .content_element{
+            grid-column-start: 2;
+            grid-column-end: 4;
+            grid-row-start: 1;
         }
         .message_box{
+        grid-column-start: 1;
         grid-column-end: 2;
+        grid-row-start: 1;
         } 
-    } 
+        .location{
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 4;
+        }
+        .wrapper{
+        grid-column-start: 2;
+        grid-column-end: 4;
+        grid-row-start: 2;
+        } 
+         .form{
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 3;
+        } 
+    }
 }
+
+@media screen and(max-width: 350px){
+    .site-header div.identity .col-md-6{
+    display: none;
+     }
+     .site-header div.identity .site-branding p.site-description {
+         display: none;
+     }
+     .container{
+        grid-gap: 0.5rem;
+          grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto auto;
+        .content_element{
+            grid-column: 1 / -1;
+            grid-row-start: 1;
+        }
+        .message_box{
+             grid-column: 1 / -1;
+        grid-row-start: 2;
+        } 
+        .location{
+             grid-column: 1 / -1;
+        grid-row-start: 3;
+        }
+        .wrapper{
+        grid-column: 1 / -1;
+        grid-row-start: 4;
+        } 
+         .form{
+       grid-column: 1 / -1;
+        grid-row-start: 5;
+        } 
+    }
+
+ }
 .devn-form{
     display: flex;
 }
-.row .label{
-    display: block;
+.row {
+   
+    background: #B1E6F4;
+    padding: 2rem;
+    border-radius:0.7rem; 
+    .label{
+        display: block;
+    }
+    section{
+    width: fit-content;
+    text-align: center;
+    }
+    selection#beauty div{
+        margin: 1rem;
+    }
 }
