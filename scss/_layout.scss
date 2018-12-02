@@ -346,6 +346,30 @@ div.silva
     }
 }
 
+div.uslugi{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 1rem;
+    .title-image{
+        
+        .img-responsive{  
+            display: block;      
+            height: auto;
+            width: 100%;        
+        }
+    }
+    div.detail{
+        align-self: center;
+        grid-column: span 2;
+     ul{
+         list-style-type: circle;
+     }
+     li.no-bullet{
+         list-style-type: none;
+     }
+    }
+
+}
 
 
     @media screen and(max-width: 600px){
@@ -392,6 +416,20 @@ div.silva
           /*  background: blue !important;*/
             grid-template-columns: 1fr 1fr 1fr;
         }
+
+    div.uslugi{
+        div.detail{
+          h4.entry-title{
+              font-size: 1.4rem;
+          }
+            ul.emphasized-list{
+            list-style-type: square;
+                li:nth-child(3){
+                display: none;
+                }
+            }
+        }
+    }
 }
 
 @media screen and(max-width: 350px){
@@ -434,7 +472,23 @@ div.silva
             grid-column: span 2;
             }
         }
- }
+        div.uslugi{
+              grid-template-columns: repeat(1,1fr);
+        div.detail{
+              grid-column: span 1;
+          h4.entry-title{
+              font-size: 1.2rem;
+          }
+            ul.emphasized-list{
+            list-style-type: disc;
+               /* li:nth-child(3){
+                display: none;
+                }*/
+            }
+        }
+    }
+    }
+
     .devn-form{
         display: flex;      
     }
@@ -459,36 +513,12 @@ section.form{
             }
     }
 }
-div.accspecialized{
+    div.accspecialized{
     ul{
         list-style-type: square;
         list-style-position: inside;
     }
-    li{
+        li{
         padding-left:3rem; 
-    }
-}
-
-div.uslugi{
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-gap: 1rem;
-    .title-image{
-        
-        .img-responsive{  
-            display: block;      
-            height: auto;
-            width: 100%;        
         }
     }
-    div.detail{
-        grid-column: span 2;
-     ul{
-         list-style-type: circle;
-     }
-     li.no-bullet{
-         list-style-type: none;
-     }
-    }
-
-}
